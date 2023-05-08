@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+    <style>
+        body {
+            background-color: rgb(172, 212, 243);
+        }
+        h1 {
+            font-size: 3em;
+            color: rgb(71, 97, 106);
+        }
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = Number.parseInt(window.prompt("Digite um número:")) 
+        var n2 = Number.parseInt(window.prompt("Digite outro número"))
+        //'Number.parseInt' ou 'Number.parseFloat' ou apenas 'Number' converte a variável para inteiro
+        var soma = n1 + n2
+        var junto = String(n1) + String(n2)
+        // converte para string
+        window.alert(n1 + " + " + n2 + " = " + soma)
+        window.alert(junto)
+    </script>
+</body>
+</html>
