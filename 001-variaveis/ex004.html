@@ -22,14 +22,8 @@
     <h1>Olá, Mundo!</h1>
     <p>Já me livrei da maldição</p>
     <script>
-        var n1 = Number.parseInt(window.prompt("Digite um número:")) 
-        var n2 = Number.parseInt(window.prompt("Digite outro número"))
-        //'Number.parseInt' ou 'Number.parseFloat' ou apenas 'Number' converte a variável para inteiro
-        var soma = n1 + n2
-        var junto = String(n1) + String(n2)
-        // converte para string
-        window.alert(n1 + " + " + n2 + " = " + soma)
-        window.alert(`${n1} + ${n2} = ${soma}`)
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>. Seu nome tem ${nome.length} letras.`)
     </script>
 </body>
 </html>
