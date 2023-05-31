@@ -5,15 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Probabilidades</title>
+    <Style>
+        *{
+            font-family: sans-serif;
+        }
+        body{
+            background-color: lightcyan;
+        }
+        #soma{
+            display: inline-flex;
+            height: 30px;
+        }
+        p{
+            padding: 0px 12px;
+        }
+    </Style>
 </head>
 
 <body>
     <h2>Insira os números</h2>
-    <div>
+    <div id="soma">
         <input type="number" id="num1">
         <p>+</p>
         <input type="number" id="num2">
-        <input type="button" value="somar" onclick=somar()>
+        <input type="button" value="somar" onclick="somar()">
     </div>
     <div id="resultado">
 
