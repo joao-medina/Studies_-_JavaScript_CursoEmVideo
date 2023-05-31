@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+
+<body>
+    <h1>Insira sua velocidade</h1>
+
+    <input type="number" name="txtn1" id="txtvel">
+    <input type="button" value="Verificar" onclick=calcular()>
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        function calcular() {
+            var nn1 = window.document.getElementById('txtvel')
+            var resultado = window.document.getElementById('resultado')
+            var n1 = Number(nn1.value)
+
+            resultado.innerHTML = `<p>Sua velocidade é <strong>${n1}Km/h</strong></p>`
+            if (n1 >= 100) {
+                resultado.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade!</p>`
+            } else {
+                resultado.innerHTML += `<p>Velocidade conforme o limite permitido.</p>`
+            }
+            resultado.innerHTML += `<p>Não se esqueça do cinto de segurança.</p>`
+        }
+    </script>
+</body>
+</html>

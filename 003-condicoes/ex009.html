@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+
+<body>
+    <h1>Insira o seu país de origem</h1>
+    <input type="text" id="nasc">
+    <input type="button" id="botao" value="Verificar" onclick=verificar()>
+    <div id="resultado"></div>
+
+    <script>
+        function verificar() {
+            var nasc = document.getElementById('nasc')
+            var resultado = document.getElementById('resultado')
+
+            nasc.value = nasc.value.toLowerCase() 
+
+            resultado.innerHTML += `<P>Você nasceu no <strong>${nasc.value}</strong>.</P>`
+            if (nasc.value == 'brasil') {
+                resultado.innerHTML += '<P>Você é <strong>brasileiro!</strong></P>'
+            } else {
+                resultado.innerHTML += '<P>Você é <strong>estrangeiro!</strong></P>'
+            }
+        }
+
+    </script>
+</body>
+</html>
