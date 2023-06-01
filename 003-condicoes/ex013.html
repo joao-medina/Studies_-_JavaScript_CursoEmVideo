@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="dia">Hoje é </p>
+
+    <script>
+        var hoje = document.getElementById("dia")
+        var data = new Date()
+        var numdata = data.getDay()
+
+        switch(numdata){
+            case 0:
+                hoje.innerText += ' domingo'
+                break
+            case 1:
+                hoje.innerText += ' segunda-feira'
+                break
+            case 2:
+                hoje.innerText += ' terça-feira'
+                break
+            case 3:
+                hoje.innerText += ' quarta-feira'
+                break
+            case 4:
+                hoje.innerText += ' quinta-feira'
+                break
+            case 5:
+                hoje.innerText += ' sexta-feira'
+                break
+            case 6:
+                hoje.innerText += ' sábado'
+                break
+            default:
+                hoje.innerText += ' [erro]'
+                break
+        }
+    </script>
+</body>
+</html>
