@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+    <style>
+        body {
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Insira uma hora</h2>
+    <input type="number" id="num">
+    <input type="button" value="verificar" onclick="verif()">
+    <div id="res"></div>
+
+
+    <script>        
+        function verif() {
+
+            var horatxt = document.getElementById("num")
+            var resultado = document.getElementById("res")
+            var hora = Number(horatxt.value)
+
+
+            resultado.innerHTML = `<P>Hora inserida: ${hora}:00</P>`
+
+            if(hora < 12) {
+                resultado.innerHTML += `<P><strong>BOM DIA!</strong></P>`
+            } else if (hora < 18) {
+                resultado.innerHTML += `<P><strong>BOA TARDE!</strong></P>`
+            } else {
+                resultado.innerHTML += `<P><strong>BOA NOITE!</strong></P>`
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+    <style>
+        body {
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Insira sua idade</h1>
+    <input type="number" id="num">
+    <input type="button" value="verificar" onclick="verif()">
+    <div id="res"></div>
+
+    <script>        
+        function verif(){
+            var numtxt = document.getElementById("num")
+            var res = document.getElementById("res")
+            var num = Number(numtxt.value)
+
+            res.innerHTML = `<p>Você possui <strong>${num}</strong> anos de idade</p>`
+
+            if(num < 16) {
+                res.innerHTML += `<p>Voto <strong>bloqueado</strong></p>`
+            } else {
+                if(num >= 16 && num < 18) {
+                    res.innerHTML += `<p>Voto <strong>opcional</strong><p>`
+                } else {
+                    res.innerHTML += `<p>Voto <strong>obrigatório</strong><p>`
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
