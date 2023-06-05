@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    color: white;
+    text-align: center;
+    margin: 15px;
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.307);
+
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+}
+
+section div{
+    text-align: center;
+
+    padding: 10px
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-weight: 550;
+
+    margin: 20px
+}
