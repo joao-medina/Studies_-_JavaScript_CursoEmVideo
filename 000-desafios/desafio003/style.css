@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(237, 123, 150);
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+section {
+    width: 500px;
+    margin: auto;
+
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.296);
+
+    padding: 20px;
+}
+
+section div p {
+    padding: 10px 0px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+
+    padding: 30px;
+}
