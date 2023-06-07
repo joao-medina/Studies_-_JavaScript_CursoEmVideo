@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(156, 137, 251);
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    padding: 30px;
+    margin: auto;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.358);
+}
+
+div {
+    width: 300px;
+    margin: auto;
+}
+
+#req {
+    color: rgb(158, 158, 158);
+    padding-bottom: 15px;
+}
+
+select {
+    width: 208px;
+}
+
+#num {
+    width: 200px;
+}
+
+.button {
+    color: white;
+    background-color: rgb(125, 111, 197);
+    border-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(59, 22, 86, 0.766);
+}
+
+#botao {
+    padding-bottom: 20px;
+}
+
+#res {
+    color: white;
+    background-color: rgb(120, 104, 201);
+    padding: 15px;
+
+    border-radius: 10px;
+}
+
+footer {
+    color: white;
+    font-style: italic;
+    text-align: center;
+
+    padding: 30px;
+}

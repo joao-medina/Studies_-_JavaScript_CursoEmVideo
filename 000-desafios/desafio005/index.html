@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Verificador de números</title>
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de números</h1>
+    </header>
+
+    <section>
+        <div>
+            <h2>Insira um número</h2>
+            <p id="req">(de 1 a 100)</p>
+            <input type="number" name="num" id="num">
+            <input class="button" type="button" value="Adicionar" onclick="adicionar()">
+            <select name="lista" id="lista" size="6"></select>
+        </div>
+        <div id="botao">
+            <input class="button" type="button" value="Finalizar" onclick="verificar()">
+        </div>
+        <div id="res">
+            <p>Resultado:</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>@footer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
